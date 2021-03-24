@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 20px;
+            background-color: #eee;
+        }
+        p::before{  
+            content: "";
+            width: 0px;
+            height: 0px;
+            display: inline-block;
+            border-top: 8px solid transparent;
+            border-right: 8px solid #000;
+            border-bottom: 8px solid transparent;
+            vertical-align: middle;
+            /* border-left: 8px solid blue; */
+        }
+        p::after{  
+            content: "安安我是after";
+        }
+        .arrow{
+            width: 0px;
+            height: 0px;
+            border-top: 20px solid red;
+            /* border-right: 40px solid green; */
+            /* border-bottom: 40px solid rgb(38, 0, 255); */
+            border-left: 40px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <p>內容</p>
+    <div class="arrow">
+    </div>
+</body>
+</html>
